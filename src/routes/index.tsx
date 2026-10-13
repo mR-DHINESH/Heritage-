@@ -33,10 +33,12 @@ import {
   X,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import heroMobile from "../../Images/mobileview.png?url";
 
 const photos = {
   crest: "/images/crest.jpeg",
   hero: "/images/hero.jpeg",
+  heroMobile,
   classroom: "/images/classroom.jpeg",
   community: "/images/community.jpeg",
   about: "/images/about.jpeg",
@@ -236,8 +238,11 @@ function HeritageAcademyPage() {
       </header>
 
       <main>
-        <section className="hero" id="home" aria-labelledby="hero-title">
-          <img className="hero-photo" src={photos.hero} alt="Heritage Academy Matriculation School campus" fetchPriority="high" />
+        <section className="hero school-banner" id="home" aria-labelledby="hero-title">
+          <picture className="hero-photo-picture">
+            <source media="(max-width: 768px)" srcSet={photos.heroMobile} />
+            <img className="hero-photo" src={photos.hero} alt="Heritage Academy Matriculation School campus" fetchPriority="high" />
+          </picture>
           <div className="hero-shade" />
           <div className="hero-content page-width">
             <div className="hero-copy">
