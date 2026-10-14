@@ -34,6 +34,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import heroMobile from "../../Images/mobileview.png?url";
+import principalPortrait from "../../Images/2.jpeg?url";
 
 const photos = {
   crest: "/images/crest.jpeg",
@@ -41,7 +42,6 @@ const photos = {
   heroMobile,
   classroom: "/images/classroom.jpeg",
   community: "/images/community.jpeg",
-  about: "/images/about.jpeg",
   graduation: "/images/graduation.jpeg",
   schoolBus: "/images/school-bus.jpeg",
   outdoorPlay: "/images/outdoor-play.jpeg",
@@ -270,7 +270,7 @@ function HeritageAcademyPage() {
 
         <section id="about" className="section section-about">
           <div className="about-layout page-width">
-            <div className="about-visual reveal"><div className="about-image-frame"><img src={photos.about} alt="Children and educators together at Heritage Academy" loading="lazy" /></div><div className="about-image-note"><span className="note-icon"><Heart aria-hidden="true" /></span><span><strong>Every child belongs</strong><small>Learning, with care at its heart</small></span></div><div className="about-side-label">A COMMUNITY THAT CARES</div></div>
+            <div className="about-visual reveal"><div className="about-image-frame"><img src={principalPortrait} alt="Heritage Academy graduates with their teachers on stage" loading="lazy" /></div><div className="about-image-note"><span className="note-icon"><Heart aria-hidden="true" /></span><span><strong>Every child belongs</strong><small>Learning, with care at its heart</small></span></div><div className="about-side-label">A COMMUNITY THAT CARES</div></div>
             <div className="about-copy reveal">
               <span className="section-kicker"><span /> Welcome to Heritage Academy</span>
               <h2>A strong beginning<br />for a <em>bright tomorrow.</em></h2>
@@ -286,7 +286,7 @@ function HeritageAcademyPage() {
 
         <section className="principal-section">
           <div className="principal-inner page-width reveal">
-            <div className="principal-portrait"><img src={photos.community} alt="School staff and children gathered together" loading="lazy" /><span className="portrait-mark"><Quote aria-hidden="true" /></span></div>
+            <div className="principal-portrait"><img src={principalPortrait} alt="Heritage Academy graduates with their teachers on stage" loading="lazy" /><span className="portrait-mark"><Quote aria-hidden="true" /></span></div>
             <div className="principal-message"><span className="section-kicker section-kicker-light"><span /> A message from our principal</span><blockquote>“Education is more than what a child learns. It is the confidence to be curious, the courage to be kind and the joy of growing together.”</blockquote><div className="principal-byline"><strong>A. Manikandan, M.A., B.Ed.</strong><span>Principal, Heritage Academy Matriculation School</span></div></div>
             <div className="principal-ornament" aria-hidden="true">H</div>
           </div>
